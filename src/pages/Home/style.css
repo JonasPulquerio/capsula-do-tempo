@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+  }
+  
+  :root {
+    --gray-50: #eaeaea;
+    --gray-100: #bebebf;
+    --gray-200: #9e9ea0;
+    --gray-300: #727275;
+    --gray-400: #56565a;
+    --gray-500: #2c2c31;
+    --gray-600: #28282d;
+    --gray-700: #1f1f23;
+    --gray-800: #18181b;
+    --gray-900: #121215;
+  
+    --purple-50: #f3eefc;
+    --purple-100: #d8cbf7;
+    --purple-200: #c6b2f3;
+    --purple-300: #ab8eee;
+    --purple-400: #9b79ea;
+    --purple-500: #8257e5;
+    --purple-600: #764fd0;
+    --purple-700: #5c3ea3;
+    --purple-800: #48307e;
+    --purple-900: #372560;
+  
+    --orange-50: #ffefe9;
+    --orange-100: #ffdcc2;
+    --orange-200: #ffb4a4;
+    --orange-300: #ff927b;
+    --orange-400: #ff7d61;
+    --orange-500: #ff5c3a;
+    --orange-600: #e84535;
+    --orange-700: #b54129;
+    --orange-800: #8c3a20;
+    --orange-900: #6b2718;
+  
+    --yellow-50: #fff9ec;
+    --yellow-100: #ffebc4;
+    --yellow-200: #ffe2a7;
+    --yellow-300: #ffcd7f;
+    --yellow-400: #ffcc66;
+    --yellow-500: #ffbf40;
+    --yellow-600: #e8ae3a;
+    --yellow-700: #b5882d;
+    --yellow-800: #8c6935;
+    --yellow-900: #6b501b;
+  
+    --green-50: #e6f8ef;
+    --green-100: #b1f1ce;
+    --green-200: #8cebcb;
+    --green-300: #57e295;
+    --green-400: #36dc81;
+    --green-500: #04d361;
+    --green-600: #04c058;
+    --green-700: #039645;
+    --green-800: #027435;
+    --green-900: #025929;
+  
+  }
+  
+  .principal {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    opacity: 100%;
+    border-radius: 0%;
+    background-color: #000000;
+  }
+  
+  .left {
+    display: flex;
+    flex-direction: column;
+    width: 720px;
+    height: 100vh;
+    padding: 64px 120px;
+    justify-content: space-between;
+    background: radial-gradient(circle, #1b1b1b 0%, #0a0a0a 100%);
+  
+  
+    .luz {
+      width: 526.72px;
+      height: 288.81px;
+      position: absolute;
+      top: 249.81px;
+      left: 478px;
+      background-color: rgba(100, 59, 187, 0.3);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 0 100px 100px rgba(100, 59, 187, 0.3);
+      border-radius: 50%;
+  
+    }
+  
+    .frame1 {
+      display: flex;
+      width: 480px;
+      height: 40px;
+      color: var(--gray-100);
+  
+      p {
+        width: 160px;
+        height: 36px;
+        font-size: 14;
+        line-height: 125%;
+        margin-left: 12px;
+      }
+    }
+  
+    .frame2 {
+      width: 420px;
+      height: 234px;
+      z-index: 3;
+  
+      img {
+        width: 160.76px;
+        height: 48px;
+        margin-bottom: 20px;
+      }
+  
+      h2 {
+        width: 420px;
+        height: 50px;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 40px;
+        color: var(--gray-50);
+        line-height: 125%;
+        margin-bottom: 4px;
+      }
+  
+      p {
+        width: 420px;
+        height: 58px;
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 18px;
+        color: var(--gray-100);
+        line-height: 160%;
+        margin-bottom: 20px;
+      }
+  
+      button {
+        width: 214px;
+        height: 34px;
+        background-color: var(--green-500);
+        gap: 8px;
+        padding: 12px 20;
+        border-radius: 999px;
+        border: none;
+        color: #09090A;
+        font-family: Roboto;
+        font-weight: bold;
+        font-size: 14px;
+      }
+    }
+  
+    .frame3 {
+      width: 229px;
+      height: 22px;
+      color: var(--gray-200);
+      font-family: Roboto;
+      font-weight: normal;
+      font-size: 14px;
+  
+    }
+  }
+  
+  .right {
+    width: 100%;
+    height: 100vh;
+    padding: 64px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    background-color: #000000;
+  
+    .frame4 {
+      width: 360px;
+      height: 52px;
+  
+      p {
+        width: 360px;
+        height: 52;
+        color: var(--gray-100);
+        font-family: Roboto;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+      }
+    }
+  }
