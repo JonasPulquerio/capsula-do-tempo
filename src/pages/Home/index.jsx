@@ -3,8 +3,10 @@ import frame from '../../assets/Frame.png';
 import logo from '../../assets/Logo.png';
 
 function Home() {
+  
   return (
     <section className='principal'>
+
       <div className='left'>
         <div className='luz'></div>
         <div className='frame1'>
@@ -17,7 +19,7 @@ function Home() {
             <h2>Sua cápsula do tempo</h2>
             <p>Colecione momentos marcantes da sua jornada e compartilhe (se quiser) com o mundo!</p>
           </div>
-          <button>CADASTRAR LEMBRANÇA</button>
+          <button type='button'>CADASTRAR LEMBRANÇA</button>
         </div>
         <div className='frame3'>
           <p>Feito com 💜 no NLW da Rocketseat</p>
@@ -31,6 +33,7 @@ function Home() {
       </div>
 
     </section>
+
   )
 }
 
