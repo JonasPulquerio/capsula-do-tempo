@@ -31,7 +31,11 @@ function Left() {
       <div className={styles.footer}>
         <p>
           Feito com 💜 no NLW da{" "}
-          <Link className={styles.rocktseatLink} to="https://www.rocketseat.com.br/" target="_blank">
+          <Link
+            className={styles.rocktseatLink}
+            to="https://www.rocketseat.com.br/"
+            target="_blank"
+          >
             Rocketseat
           </Link>
         </p>
