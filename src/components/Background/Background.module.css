@@ -1,0 +1,114 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.background {
+  display: flex;
+  position: relative;
+}
+
+.left {
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background-image:
+    radial-gradient(1px 1px at 15% 10%, #fff, transparent),
+    radial-gradient(1px 1px at 25% 35%, #fff, transparent),
+    radial-gradient(1px 1px at 45% 55%, #fff, transparent),
+    radial-gradient(1px 1px at 60% 75%, #fff, transparent),
+    radial-gradient(1px 1px at 80% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 95% 50%, #fff, transparent),
+    radial-gradient(1px 1px at 30% 90%, #fff, transparent),
+    radial-gradient(1px 1px at 10% 60%, #fff, transparent),
+    radial-gradient(1px 1px at 20% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 50% 20%, #fff, transparent),
+    radial-gradient(1px 1px at 70% 40%, #fff, transparent),
+    radial-gradient(1px 1px at 85% 65%, #fff, transparent),
+    radial-gradient(1px 1px at 40% 15%, #fff, transparent),
+    radial-gradient(1px 1px at 55% 35%, #fff, transparent),
+    radial-gradient(1px 1px at 33% 75%, #fff, transparent),
+    radial-gradient(1px 1px at 60% 90%, #fff, transparent),
+    radial-gradient(1px 1px at 75% 50%, #fff, transparent),
+    radial-gradient(1px 1px at 5% 10%, #fff, transparent),
+    radial-gradient(1px 1px at 22% 68%, #fff, transparent),
+    radial-gradient(1px 1px at 41% 81%, #fff, transparent),
+    radial-gradient(1px 1px at 78% 28%, #fff, transparent),
+    radial-gradient(1px 1px at 92% 43%, #fff, transparent),
+    radial-gradient(1px 1px at 13% 94%, #fff, transparent),
+    radial-gradient(1px 1px at 31% 59%, #fff, transparent),
+    radial-gradient(1px 1px at 49% 22%, #fff, transparent),
+    radial-gradient(1px 1px at 67% 85%, #fff, transparent),
+    radial-gradient(1px 1px at 92% 38%, #fff, transparent);
+  background-color: #121215;
+}
+
+
+.traco {
+  width: 8px;
+  height: 100%; /* Preenche do topo ao rodapé */
+  background: repeating-linear-gradient(
+    to bottom,
+    #FFFFFF10, 
+    #FFFFFF10, 
+    transparent 1px, 
+    transparent 15px /* Espaço entre as linhas */
+  );
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  z-index: 5;
+  margin-block: 10px;
+}
+
+.luz {
+  width: 527px;
+  height: 289px;
+  position: absolute;
+  top: 29%;
+  left: 78%;
+  opacity: 50%;
+  background-color: rgba(100, 59, 187, 0.3);
+  backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 100px 200px rgba(100, 59, 187, 0.3);
+  border-radius: 50%;
+}
+
+.right {
+  width: 50%;
+  background: #000000;
+  position: relative;
+  overflow: hidden;
+  background-image:
+  radial-gradient(1px 1px at 15% 55%, #fff, transparent),
+  radial-gradient(1px 1px at 25% 35%, #fff, transparent),
+  radial-gradient(1px 1px at 45% 55%, #fff, transparent),
+  radial-gradient(1px 1px at 60% 75%, #fff, transparent),
+  radial-gradient(1px 1px at 80% 90%, #fff, transparent),
+  radial-gradient(1px 1px at 95% 50%, #fff, transparent),
+  radial-gradient(1px 1px at 30% 90%, #fff, transparent),
+  radial-gradient(1px 1px at 15% 60%, #fff, transparent),
+  radial-gradient(1px 1px at 30% 80%, #fff, transparent),
+  radial-gradient(1px 1px at 50% 20%, #fff, transparent),
+  radial-gradient(1px 1px at 7% 40%, #fff, transparent),
+  radial-gradient(1px 1px at 85% 85%, #fff, transparent),
+  radial-gradient(1px 1px at 40% 15%, #fff, transparent),
+  radial-gradient(1px 1px at 5% 35%, #fff, transparent),
+  radial-gradient(1px 1px at 33% 75%, #fff, transparent),
+  radial-gradient(1px 1px at 65% 90%, #fff, transparent),
+  radial-gradient(1px 1px at 75% 50%, #fff, transparent),
+  radial-gradient(1px 1px at 5% 10%, #fff, transparent),
+  radial-gradient(1px 1px at 22% 18%, #fff, transparent),
+  radial-gradient(1px 1px at 11% 81%, #fff, transparent),
+  radial-gradient(1px 1px at 78% 28%, #fff, transparent),
+  radial-gradient(1px 1px at 82% 43%, #fff, transparent),
+  radial-gradient(1px 1px at 13% 94%, #fff, transparent),
+  radial-gradient(1px 1px at 31% 59%, #fff, transparent),
+  radial-gradient(1px 1px at 49% 22%, #fff, transparent),
+  radial-gradient(1px 1px at 67% 85%, #fff, transparent),
+  radial-gradient(1px 1px at 92% 38%, #fff, transparent);
+  z-index: 3;
+}
