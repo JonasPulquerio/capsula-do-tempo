@@ -24,7 +24,7 @@ function Left() {
             quiser) com o mundo!
           </p>
         </div>
-        <Link to="/" className={styles.link}>
+        <Link to="/memories" className={styles.link}>
           <p>Cadastrar lembrança</p>
         </Link>
       </div>

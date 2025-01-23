@@ -1,6 +1,6 @@
 import styles from "./InfoMemories.module.css";
 
-function Left() {
+function InfoMemories() {
   return (
     <section className={styles.conteudo}>
       <div className={styles.firstMemorie}>
@@ -13,4 +13,4 @@ function Left() {
   );
 }
 
-export default Left;
+export default InfoMemories;

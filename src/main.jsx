@@ -8,9 +8,8 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path='/' elemente={<Home />}/>
-        <Route path='/memories' elemente={<Memories />}/>
-        <Route path='/' elemente={<h1>Not Found</h1>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/memories" element={<Memories />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>
