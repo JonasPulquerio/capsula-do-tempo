@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 function Left() {
   return (
-    <section className={styles.conteudo}>
+    <section className={styles.conteudo_left}>
       <div className={styles.header}>
         <img src={Login} alt="Login" />
         <p>

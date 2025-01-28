@@ -5,12 +5,13 @@
   font-family: "Roboto", serif;
 }
 
-.conteudo {
+.conteudo_infoMemories {
   width: 90%;
   padding: 64px;
   display: grid;
   justify-self: center;
   gap: 30px;
+  position: relative;
 }
 
 .descricao {
@@ -22,13 +23,13 @@
 
 .img_rapaz_infoMemories {
   width: 100%;
-  height: 350px;
+  max-height: 300px;
 }
 
 .datas {
   position: absolute;
   top: 20px;
-  right: 200px;
+  left: -250px;
 }
 
 .datas::before {
@@ -41,17 +42,36 @@
   left: 150px;
 }
 
-.descricao p {
+.descricao .texto_infoMemories {
   width: 100%;
   color: #BEBEBF;
+  font-size: 1.125rem;
+}
+
+.seta_infoMemories {
+  color: #BEBEBF;
+  font-size: 1.4rem;
 }
 
 @media (width < 1550px) {
-  .conteudo {
-    padding: 32px;
+  .conteudo_infoMemories {
+    padding: 64px 32px;
   }
 
   .img_rapaz_infoMemories {
-    height: 250px;
+    max-height: auto;
+  }
+}
+
+@media (width < 800px) {
+  .conteudo_infoMemories {
+    padding: 64px 16px;
+  }
+}
+
+@media (width < 600px) {
+  .conteudo_infoMemories {
+    height: 100vh;
+    padding: 64px 5px;
   }
 }

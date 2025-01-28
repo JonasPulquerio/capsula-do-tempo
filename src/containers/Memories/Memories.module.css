@@ -1,5 +1,5 @@
 @media (width < 380px) {
-  .main {
+  .main_Memories {
     display: flex;
     flex-wrap: wrap;
   }

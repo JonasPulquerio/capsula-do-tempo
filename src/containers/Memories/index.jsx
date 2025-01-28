@@ -5,7 +5,7 @@ import InfoMemories from "../../components/InfoMemories";
 function Memories() {
 
   return (
-    <section className={styles.main}>
+    <section className={styles.main_Memories}>
       <Background>
         <InfoMemories />
       </Background>

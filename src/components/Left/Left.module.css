@@ -5,13 +5,15 @@
   color: #ffffff;
 }
 
-.conteudo {
+.conteudo_left {
   height: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 4rem 7.5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .header {
@@ -35,7 +37,6 @@
   width: 520px;
   display: grid;
   gap: 20px;
-  z-index: 3;
 }
 
 .main h1 {
@@ -90,24 +91,24 @@
 }
 
 @media (width <= 975px) {
-  .conteudo {
+  .conteudo_left {
     padding: 64px 60px;
   }
 }
 
 @media (width <= 730px) {
-  .conteudo {
+  .conteudo_left {
     padding: 30px;
   }
 }
 
 @media (width <= 600px) {
-  .conteudo {
+  .conteudo_left {
     padding: 64px 10px;
   }
 
   .link {
-    width: 100%;
+    width: 50%;
   }
 
   .footer {
@@ -117,7 +118,7 @@
 
 @media (width < 470px) {
   .link{
-    width: 100%;
+    width: 70%;
     padding: 10px 10px;
   }
 }
