@@ -5,34 +5,56 @@
   font-family: "Roboto", serif;
 }
 
-.conteudo_infoMemories {
+.conteudo_create {
   width: 90%;
   padding: 64px;
-  display: grid;
+  display: flex;
   justify-self: center;
-  gap: 30px;
+  gap: 1000px;
   position: relative;
 }
 
-.descricao {
+.botao_voltar {
+  text-decoration: none;
+}
+
+.create {
+font-size: 15px;
+}
+
+.botao_opcoes {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.checkBox_create {
+  background: #1F1F23;
+  border-radius: 15px;
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+.descricao_create {
   width: 100%;
   height: auto;
   line-height: 1.6;
   position: relative;
 }
 
-.img_rapaz_infoMemories {
+.img_rapaz_create {
   width: 100%;
   max-height: 300px;
 }
 
-.datas {
+.datas_create {
   position: absolute;
   top: 20px;
   left: -250px;
 }
 
-.datas::before {
+.datas_create::before {
   content: "";
   width: 30px;
   height: 2px;
@@ -42,20 +64,14 @@
   left: 150px;
 }
 
-.texto_infoMemories {
+.texto_create {
   width: 100%;
   color: #BEBEBF;
   font-size: 1.125rem;
-  text-decoration: none;
-}
-
-.seta_infoMemories {
-  color: #BEBEBF;
-  font-size: 1.4rem;
 }
 
 @media (width < 1550px) {
-  .conteudo_infoMemories {
+  .conteudo_create {
     padding: 64px 32px;
   }
 
@@ -65,13 +81,13 @@
 }
 
 @media (width < 800px) {
-  .conteudo_infoMemories {
+  .conteudo_create {
     padding: 64px 16px;
   }
 }
 
 @media (width < 600px) {
-  .conteudo_infoMemories {
+  .conteudo_create {
     height: 100vh;
     padding: 64px 5px;
   }

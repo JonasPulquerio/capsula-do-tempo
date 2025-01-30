@@ -1,5 +1,4 @@
 import styles from "./Home.module.css";
-
 import Background from "../../components/Background";
 import SemRegistro from "../../components/SemRegistro";
 
