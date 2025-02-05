@@ -11,8 +11,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 4rem 7.5rem;
-  position: relative;
+  padding: 64px 7.5%;
+  position: fixed;
   z-index: 1;
 }
 
@@ -34,12 +34,16 @@
 }
 
 .main {
-  width: 520px;
+  width: 100%;
   display: grid;
   gap: 20px;
 }
 
-.main h1 {
+.logo {
+  max-width: 100%;
+}
+
+.suaCapsula_Left {
   font-family: "Roboto", serif;
   font-weight: bold;
   font-size: 2.5rem;
@@ -47,7 +51,8 @@
   margin-bottom: 4px;
 }
 
-.main p {
+.colecioneMomentos_Left {
+  width: 70%;
   font-family: "Roboto", serif;
   font-size: 1.25rem;
   color: #BEBEBF;
@@ -55,25 +60,26 @@
 }
 
 .link {
-  width: 240px;
+  width: 214px;
   background: #04D361;
   text-decoration: none;
   border-radius: 50px;
   display: block;
-  padding: 12px 20px;
 }
 
-.link p {
+.link_P {
+  width: 100%;
   color: #09090A;
   text-align: center;
   font-family: "Bai Jamjuree", serif;
   font-weight: bold;
   font-size: 0.875rem;
   text-transform: uppercase;
+  padding: 12px 20px;
 }
 
-.footer p {
-  width: 234px;
+.footer_P {
+  width: 100%;
   font-family: "Roboto", serif;
   font-size: 0.875rem;
   line-height: 1.6;
@@ -85,58 +91,51 @@
 }
 
 @media (width <= 1150px) {
-  .main {
+  .conteudo_left {
     width: 100%;
+    padding: 64px 7.5%;
+    width: 50%;
   }
-}
 
-@media (width <= 975px) {
-  .conteudo_left {
-    padding: 64px 60px;
-  }
-}
-
-@media (width <= 730px) {
-  .conteudo_left {
-    padding: 30px;
+  .colecioneMomentos_Left {
+    width: 100%;
   }
 }
 
 @media (width <= 600px) {
   .conteudo_left {
-    padding: 64px 10px;
+    width: 100%;
+    height: 25%;
+    position: relative;
+    place-content: center;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    margin-top: 16px;
+    order: 2;
+  }
+
+  .main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .link {
-    width: 50%;
+    padding: 10px 0px;
+  }
+
+  .link_P {
+    padding: 5px ;
+  }
+
+  .spaceTime_Left {
+    display: none;
   }
 
   .footer {
-    display: flex;
-  }
-}
-
-@media (width < 470px) {
-  .link{
-    width: 70%;
-    padding: 10px 10px;
-  }
-}
-
-@media (width < 380px) {
-  .main h1 {
-    font-size: 1.9rem;
-  }
-  
-  .main p {
-    font-size: 1.2rem;
-  }
-
-  .link p {
-    font-size: 0.875rem;
-  }
-
-  .link{
-    padding: 0px 10px;
+    display: none;
   }
 }

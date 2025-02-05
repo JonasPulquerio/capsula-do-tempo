@@ -9,18 +9,30 @@ function Info_Create() {
     <section className={styles.conteudo_create}>
       <div className={styles.descricao_create}>
         <p className={styles.datas_create}>Hoje, 13 de Abril</p>
-        <Link to="/memories" className={styles.botao_voltar}>
-          <p><img src={CaretLeft} /> voltar à timeline</p>
-        </Link>
-        <div className={styles.botao_opcoes}>
-          <p>
-            <img src={ImagesSquare} /> Adivionar foto ou vídeo de capa
-          </p>
-          <div>
-            <input  className={styles.checkBox_create} type="checkbox" name="memoria" />
-            <label>Tornar memória pública</label>
+        <header className={styles.header_create}>
+          <div className={styles.botaoVoltar}>
+            <Link to="/memories" className={styles.botaoVoltar_Link}>
+              <img src={CaretLeft} />
+              <span className={styles.botaoVoltar_Texto}>
+                voltar à timeline
+              </span>
+            </Link>
           </div>
-        </div>
+          <div className={styles.botao_opcoes}>
+            <div className={styles.adicionar_Img}>
+              <img src={ImagesSquare} className={styles.imgBotao_Creat} />
+              <span className={styles.text_opcoes_create}>Adicionar foto ou vídeo de capa</span>
+            </div>
+            <div>
+              <input
+                className={styles.checkBox_create}
+                type="checkbox"
+                name="tonar_publica"
+              />
+              <label className={styles.label_create}>Tornar memória pública</label>
+            </div>
+          </div>
+        </header>
         <img
           className={styles.img_rapaz_create}
           src={RapazConcentrado}

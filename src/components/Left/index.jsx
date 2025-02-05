@@ -16,20 +16,20 @@ function Left() {
         </p>
       </div>
       <div className={styles.main}>
-        <img src={Logo} alt="Logomarca Spacetime" />
-        <div>
-          <h1>Sua cápsula do tempo</h1>
-          <p>
+        <img className={styles.logo} src={Logo} alt="Logomarca Spacetime" />
+        <div className={styles.spaceTime_Left}>
+          <h1 className={styles.suaCapsula_Left}>Sua cápsula do tempo</h1>
+          <p className={styles.colecioneMomentos_Left}>
             Colecione momentos marcantes da sua jornada e compartilhe (se
             quiser) com o mundo!
           </p>
         </div>
         <Link to="/memories" className={styles.link}>
-          <p>Cadastrar lembrança</p>
+          <p className={styles.link_P}>Cadastrar lembrança</p>
         </Link>
       </div>
       <div className={styles.footer}>
-        <p>
+        <p className={styles.footer_P}>
           Feito com 💜 no NLW da{" "}
           <Link
             className={styles.rocktseatLink}

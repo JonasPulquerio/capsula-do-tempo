@@ -14,7 +14,7 @@
   width: 50%;
   height: 100vh;
   overflow: hidden;
-  position: relative;
+  position: fixed;
   background-image:
     radial-gradient(1px 1px at 15% 10%, #fff, transparent),
     radial-gradient(1px 1px at 25% 35%, #fff, transparent),
@@ -80,8 +80,8 @@
 .right {
   width: 50%;
   background: #000000;
-  position: relative;
-  overflow: hidden;
+  position: absolute;
+  right: 0;
   background-image:
   radial-gradient(1px 1px at 15% 55%, #fff, transparent),
   radial-gradient(1px 1px at 25% 35%, #fff, transparent),
@@ -112,16 +112,20 @@
   radial-gradient(1px 1px at 92% 38%, #fff, transparent);
 }
 
-@media (width < 600px) {
+@media (width <= 600px) {
   .background {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
   
   .left {
     width: 100%;
+    position: absolute;
   }
 
   .right {
     width: 100%;
+    top: 25%;
+    position: relative;
   }
 }

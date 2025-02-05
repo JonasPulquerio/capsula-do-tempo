@@ -2,66 +2,95 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", serif;
 }
 
 .conteudo_create {
   width: 90%;
-  padding: 64px;
-  display: flex;
+  padding: 6.4%;
   justify-self: center;
-  gap: 1000px;
   position: relative;
+  font-family: "Roboto", serif;
 }
 
-.botao_voltar {
+.botaoVoltar_Link {
+  display: flex;
+  width: 150px;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
   text-decoration: none;
 }
 
-.create {
-font-size: 15px;
+.botaoVoltar_Texto {
+  width: 150px;
+  font-size: 0.875rem;
+  color: #9E9EA0;
 }
 
 .botao_opcoes {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 16px;
 }
 
+.adicionar_Img {
+  display: flex;
+  gap: 4px;
+}
+
+.imgBotao_Creat {
+  min-width: 20px;
+  max-height: 21px;
+}
+
+.text_opcoes_create {
+  width: 100%;
+  color: #9E9EA0;
+}
+
 .checkBox_create {
-  background: #1F1F23;
+  opacity: 0.7;
   border-radius: 15px;
   width: 16px;
   height: 16px;
   margin-right: 6px;
 }
 
+.label_create {
+  color: #9E9EA0;
+}
+
 .descricao_create {
   width: 100%;
-  height: auto;
   line-height: 1.6;
   position: relative;
+  color: #9E9EA0;
 }
 
 .img_rapaz_create {
   width: 100%;
   max-height: 300px;
+  margin-bottom: 16px;
 }
 
 .datas_create {
   position: absolute;
-  top: 20px;
-  left: -250px;
+  font-size: 0.75rem;
+  top: 10px;
+  left: -230px;
+  color:  #BEBEBF;
 }
 
 .datas_create::before {
   content: "";
-  width: 30px;
-  height: 2px;
+  width: 20px;
+  height: 1px;
   background: #EAEAEA;
   position: absolute;
-  top: 13px;
-  left: 150px;
+  top: 50%;
+  left: 100px;
 }
 
 .texto_create {
@@ -70,25 +99,49 @@ font-size: 15px;
   font-size: 1.125rem;
 }
 
-@media (width < 1550px) {
-  .conteudo_create {
-    padding: 64px 32px;
+@media (width <= 1200px) {
+  .header_create {
+    margin-bottom: 40px;
   }
 
-  .img_rapaz_infoMemories {
-    max-height: auto;
+  .datas_create {
+    position: absolute;
+    top: 85px;
+    left: 40px;
+  }
+
+  .datas_create::before {
+    position: absolute;
+    top: 50%;
+    left: -40px;
   }
 }
 
-@media (width < 800px) {
-  .conteudo_create {
-    padding: 64px 16px;
+@media (min-width: 645px) and (max-width: 1200px) {
+  .datas_create {
+    top: 115px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 644px) {
+  .datas_create {
+    top: 150px;
   }
 }
 
 @media (width < 600px) {
-  .conteudo_create {
-    height: 100vh;
-    padding: 64px 5px;
+  .datas_create {
+    top: 125px;
+  }
+}
+@media (width < 323px) {
+  .datas_create {
+    top: 135px;
+  }
+}
+
+@media (width < 249px) {
+  .datas_create {
+    top: 170px;
   }
 }

@@ -13,14 +13,14 @@ function InfoMemories() {
           src={RapazConcentrado}
           alt="Rapaz concentrado no computador"
         />
-        <p className={styles.texto_infoMemories}>
+        <p className={styles.descricao_infoMemories}>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
           et quas molestias excepturi sint occaecati cupiditate non provident,
           similique...
         </p>
-        <Link to="/create" className={styles.texto_infoMemories}>
-          <p>
+        <Link to="/create"  className={styles.link_infoMemories}>
+          <p className={styles.texto_infoMemories}>
             Ler mais <span className={styles.seta_infoMemories}>&rarr;</span>
           </p>
         </Link>
@@ -32,7 +32,7 @@ function InfoMemories() {
           src={RapazDiscursando}
           alt="Rapaz fazendo um discurso"
         />
-        <p className={styles.texto_infoMemories}>
+        <p className={styles.descricao_infoMemories}>
           At vero eos et accusamus et iusto odio dignissimos ducimus qui
           blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
           et quas molestias excepturi sint occaecati cupiditate non provident,

@@ -2,21 +2,16 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", serif;
 }
 
 .conteudo_infoMemories {
   width: 90%;
-  padding: 64px;
-  display: grid;
-  justify-self: center;
-  gap: 30px;
-  position: relative;
+  padding: 6.4% 6.4%;
+  font-family: "Roboto", serif;
 }
 
 .descricao {
   width: 100%;
-  height: auto;
   line-height: 1.6;
   position: relative;
 }
@@ -27,9 +22,11 @@
 }
 
 .datas {
-  position: absolute;
-  top: 20px;
-  left: -250px;
+  width: 170px;
+  position: relative;
+  top: 6%;
+  left: -227px;
+  color:  #BEBEBF;
 }
 
 .datas::before {
@@ -38,15 +35,26 @@
   height: 2px;
   background: #EAEAEA;
   position: absolute;
-  top: 13px;
-  left: 150px;
+  top: 50%;
+  left: 135px;
 }
 
-.texto_infoMemories {
+.descricao_infoMemories {
   width: 100%;
   color: #BEBEBF;
   font-size: 1.125rem;
+}
+
+.link_infoMemories {
+  max-width: 100px;
   text-decoration: none;
+}
+
+.texto_infoMemories {
+  background: #BEBEBF10;
+  width: 100px;
+  color: #BEBEBF;
+  font-size: 1.125rem;
 }
 
 .seta_infoMemories {
@@ -54,25 +62,20 @@
   font-size: 1.4rem;
 }
 
-@media (width < 1550px) {
-  .conteudo_infoMemories {
-    padding: 64px 32px;
+@media (width < 1500px) {
+  .texto_infoMemories {
+    margin-bottom: 16px;
   }
 
-  .img_rapaz_infoMemories {
-    max-height: auto;
+  .datas {
+    position: relative;
+    top: -5px;
+    left: 40px;
   }
-}
 
-@media (width < 800px) {
-  .conteudo_infoMemories {
-    padding: 64px 16px;
+  .datas::before {
+    position: absolute;
+    top: 50%;
+    left: -40px;
   }
-}
-
-@media (width < 600px) {
-  .conteudo_infoMemories {
-    height: 100vh;
-    padding: 64px 5px;
-  }
-}
+}  
